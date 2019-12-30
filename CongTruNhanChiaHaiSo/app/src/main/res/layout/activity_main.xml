@@ -14,6 +14,7 @@
             android:layout_height="wrap_content"
             android:text="Số A: "/>
         <EditText
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtNumberA"/>
@@ -28,6 +29,7 @@
             android:layout_height="wrap_content"
             android:text="Số B: "/>
         <EditText
+            android:inputType="number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/txtNumberB"/>
@@ -38,24 +40,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
         <Button
+            android:enabled="false"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnPlus"
             android:text="Cộng"/>
         <Button
+            android:enabled="false"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMinus"
             android:text="Trừ"/>
         <Button
+            android:enabled="false"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btnMultiply"
             android:text="Nhân"/>
         <Button
+            android:enabled="false"
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -66,7 +72,39 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Kết quả"
-        android:id="@+id/txtResult"
+        android:textSize="30sp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/tvResult"
         android:textAlignment="center"
         android:padding="10dp"/>
+    <RadioGroup
+        android:id="@+id/radGroup"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cộng"
+            android:id="@+id/radPlus"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Trừ"
+            android:id="@+id/radMinus"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhân"
+            android:id="@+id/radMultiply"/>
+        <RadioButton
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Chia"
+            android:id="@+id/radDivde"/>
+    </RadioGroup>
 </LinearLayout>
