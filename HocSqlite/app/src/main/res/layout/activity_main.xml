@@ -29,18 +29,32 @@
             android:text="Thêm"
             android:layout_weight="1"/>
         <Button
-            android:id="@+id/btnDelete"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Xóa"
-            android:layout_weight="1"/>
-        <Button
             android:id="@+id/btnShow"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Hiển thị"
             android:layout_weight="1"/>
     </LinearLayout>
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa toàn bộ"/>
+    <Button
+        android:id="@+id/btnDelete001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Xóa sv mã dtc001"/>
+    <Button
+        android:id="@+id/btnViewByMark"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SV ĐTB nhỏ hơn 4"/>
+    <Button
+        android:id="@+id/btnEdit001"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sửa thông tin dtc001"/>
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
