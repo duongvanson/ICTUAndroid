@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants"
+    android:layout_weight="10">
+    <ImageView
+        android:layout_weight="2"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/monan"
+        android:id="@+id/imgMonAn"/>
+    <LinearLayout
+        android:layout_weight="6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTen"
+            android:text="Món ăn 1"
+            android:textSize="26sp"
+            android:textColor="#333"
+            android:textStyle="bold"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvGia"
+            android:text="Giá: 5000 VNĐ"
+            android:textSize="20sp"
+            android:textColor="#ff0000"/>
+    </LinearLayout>
+    <CheckBox
+        android:layout_weight="2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/chk"/>
+</LinearLayout>
